@@ -31,7 +31,9 @@ X = [ones(m, 1) X];
 %       
 
 
-
+  
+  prob_mat = X * all_theta';     % 5000 x 10 == no_of_input_image x num_labels
+  [prob, p] = max(prob_mat,[],2);
 
 
 
